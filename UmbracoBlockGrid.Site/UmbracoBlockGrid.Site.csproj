@@ -1,19 +1,44 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 	<IsPackable>false</IsPackable>
   </PropertyGroup>
+  <ItemGroup>
+    <Content Include="wwwroot\media\0bxfaesl\collin-clyne-zsuely56fzu-unsplash.jpg" />
+    <Content Include="wwwroot\media\0vbjhso2\jay-mantri-qkfxq3x-ybi-unsplash.jpg" />
+    <Content Include="wwwroot\media\104k3qal\hossein-nasr-uj99hdy2mmw-unsplash.jpg" />
+    <Content Include="wwwroot\media\2k4pcmls\yoal-desurmont-jqgsm3b9fpo-unsplash.jpg" />
+    <Content Include="wwwroot\media\4ovft110\hossein-nasr-vwzdwriw3xu-unsplash.jpg" />
+    <Content Include="wwwroot\media\5hvje3ho\hossein-nasr-vmst7pnoto-unsplash.jpg" />
+    <Content Include="wwwroot\media\ahqlej3u\hossein-nasr-2nuu_j3zgke-unsplash.jpg" />
+    <Content Include="wwwroot\media\aqbdcsia\geran-de-klerk-wjkc3xzjsxw-unsplash.jpg" />
+    <Content Include="wwwroot\media\ecajtpcr\hernan-lucio-gjfvhkuhdsi-unsplash.jpg" />
+    <Content Include="wwwroot\media\gjyknoro\collin-clyne-eg8_h52znw0-unsplash.jpg" />
+    <Content Include="wwwroot\media\hp1nl3ka\jay-mantri-tfyi0qox08c-unsplash.jpg" />
+    <Content Include="wwwroot\media\ilbjuhy3\simone-hutsch-l8fyk9rs-ou-unsplash.jpg" />
+    <Content Include="wwwroot\media\iqbpktlb\grant-ritchie-fbkrqhnlqoy-unsplash.jpg" />
+    <Content Include="wwwroot\media\jjzbdo2i\bosco-shots-slr66yjpsoi-unsplash.jpg" />
+    <Content Include="wwwroot\media\jwwonu1e\merve-sehirli-nasir-r_slzigonz4-unsplash.jpg" />
+    <Content Include="wwwroot\media\nndj3jjs\thomas-griesbeck-bs-uxe8wu5y-unsplash.jpg" />
+    <Content Include="wwwroot\media\oojba5oy\tiago-alexandre-lopes-5vdftgpwv2g-unsplash.jpg" />
+    <Content Include="wwwroot\media\phljfcxd\hossein-nasr-wr56ynk67uc-unsplash.jpg" />
+    <Content Include="wwwroot\media\ruzlopol\geran-de-klerk-qzgn45hsen0-unsplash.jpg" />
+    <Content Include="wwwroot\media\t2ddj1vf\casey-horner-wkjiek4qsnk-unsplash.jpg" />
+    <Content Include="wwwroot\media\ta4h5nb3\ed-259-xcri6cpkkjs-unsplash.jpg" />
+    <Content Include="wwwroot\media\vuul5xi1\scott-webb-_k-qkkbn7ds-unsplash.jpg" />
+    <Content Include="wwwroot\media\wvgdooyq\meiying-ng-orwkd-iwgqg-unsplash.jpg" />
+  </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Umbraco.Cms" Version="11.0.0" />
+    <PackageReference Include="Umbraco.Cms" Version="14.0.0" />
+    <PackageReference Include="uSync" Version="14.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <!-- Opt-in to app-local ICU to ensure consistent globalization APIs across different platforms -->
     <PackageReference Include="Microsoft.ICU.ICU4C.Runtime" Version="68.2.0.9" />
-    <PackageReference Include="uSync" Version="11.0.0" />
     <RuntimeHostConfigurationOption Include="System.Globalization.AppLocalIcu" Value="68.2.0.9" Condition="$(RuntimeIdentifier.StartsWith('linux')) or $(RuntimeIdentifier.StartsWith('win')) or ('$(RuntimeIdentifier)' == '' and !$([MSBuild]::IsOSPlatform('osx')))" />
   </ItemGroup>
 
@@ -34,6 +59,29 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="uSync\" />
+	  <Folder Include="wwwroot\media\2kgnqe01\" />
+	  <Folder Include="wwwroot\media\4aonipek\" />
+	  <Folder Include="wwwroot\media\5jmfns3r\" />
+	  <Folder Include="wwwroot\media\at2pdc3c\" />
+	  <Folder Include="wwwroot\media\c1ghewgm\" />
+	  <Folder Include="wwwroot\media\ch1dsasu\" />
+	  <Folder Include="wwwroot\media\etrps01s\" />
+	  <Folder Include="wwwroot\media\hsdhddlz\" />
+	  <Folder Include="wwwroot\media\k31oq3tc\" />
+	  <Folder Include="wwwroot\media\lgsbnjbc\" />
+	  <Folder Include="wwwroot\media\lsenk53v\" />
+	  <Folder Include="wwwroot\media\nn1lpby1\" />
+	  <Folder Include="wwwroot\media\oaqnjquh\" />
+	  <Folder Include="wwwroot\media\pjqb4wit\" />
+	  <Folder Include="wwwroot\media\ravpjeo3\" />
+	  <Folder Include="wwwroot\media\rxehp51j\" />
+	  <Folder Include="wwwroot\media\vffn4cry\" />
+	  <Folder Include="wwwroot\media\wi4jgqzj\" />
+	  <Folder Include="wwwroot\media\xo3oadch\" />
+	  <Folder Include="wwwroot\media\yo2fodpb\" />
+	  <Folder Include="wwwroot\media\yrtkazin\" />
+	  <Folder Include="wwwroot\media\zmenzklu\" />
+	  <Folder Include="wwwroot\media\zxelh4yi\" />
 	</ItemGroup>
 
 </Project>

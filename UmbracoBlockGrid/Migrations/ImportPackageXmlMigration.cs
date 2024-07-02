@@ -1,9 +1,4 @@
 ﻿using Microsoft.Extensions.Options;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Umbraco.Cms.Core.Configuration.Models;
 using Umbraco.Cms.Core.IO;
 using Umbraco.Cms.Core.PropertyEditors;
@@ -36,14 +31,12 @@ namespace UmbracoBlockGrid.Migrations
                 context,
                 packageMigrationsSettings)
         {
+            this.RebuildCache = true;
         }
 
         protected override void Migrate()
         {
             ImportPackage.FromEmbeddedResource<ImportPackageXmlMigration>().Do();
-
-            // Publish the root content nodes           
-            Context.AddPostMigration<PublishRootBranchPostMigration>();
         }
     }
 }

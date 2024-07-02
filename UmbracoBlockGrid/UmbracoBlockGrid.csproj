@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>net7.0</TargetFramework>
+		<TargetFramework>net8.0</TargetFramework>
 		<ContentTargetFolders>.</ContentTargetFolders>
 	</PropertyGroup>
 
@@ -51,8 +51,7 @@
 		  <PrivateAssets>all</PrivateAssets>
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
-		<PackageReference Include="Umbraco.Cms.Web.Website" Version="11.0.0" />
-		<PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="11.0.0" />
+		<PackageReference Include="Umbraco.Cms.Web.Website" Version="14.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -61,7 +60,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<None Remove="App_Plugins\UmbracoBlockGrid\BlockViews\RichText.js" />
+		<None Remove="App_Plugins\UmbracoBlockGrid\umbraco-package.json" />
 		<None Remove="Migrations\package.zip" />
 		<EmbeddedResource Include="Migrations\package.zip" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Update="App_Plugins\UmbracoBlockGrid\BlockViews\RichText.js">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
 	</ItemGroup>
 </Project>

@@ -1,0 +1,17 @@
+{
+	"$schema": "../../umbraco-package-schema.json",
+	"id": "Umbraco.BlockGrid.Example.Website",
+	"name": "Umbraco Block Grid Example Website",
+	"version": "14.0.0",
+	"allowPackageTelemetry": true,
+	"extensions": [
+		{
+			"type": "blockEditorCustomView",
+			"alias": "Umbraco.BlockGrid.Example.Website.RichText",
+			"name": "Rich Text Block",
+			"element": "/App_Plugins/UmbracoBlockGrid/BlockViews/RichText.js",
+			"forContentTypeAlias": [ "richTextBlock" ],
+			"forBlockEditor": "block-grid"			
+		}
+	]
+}

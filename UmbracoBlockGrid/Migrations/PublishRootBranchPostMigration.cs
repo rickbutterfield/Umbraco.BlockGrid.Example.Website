@@ -24,7 +24,8 @@ namespace UmbracoBlockGrid.Migrations
             var contentHome = _contentService.GetRootContent().FirstOrDefault(x => x.ContentType.Alias == "blockGrid");
             if (contentHome != null)
             {
-                _contentService.SaveAndPublishBranch(contentHome, true);
+                _contentService.Save(contentHome);
+                _contentService.PublishBranch(contentHome, true, contentHome.AvailableCultures.ToArray());
             }
             else
             {
